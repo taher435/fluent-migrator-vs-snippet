@@ -3,7 +3,7 @@ A Visual Studio C# snippet for Fluent Migrator
 
 ### How to add snippet to your Visual Studio Editor
 
-1. Download the migration.snippet file and save it on your disk.
+1. Download the [migration.snippet](https://github.com/taher435/fluent-migrator-vs-snippet/blob/master/migration.snippet) file and save it on your disk.
 2. Open the Code Snippets Manager (Tools/Code Snippets Manager).
 3. Click the Import button.
 4. Go to the location where you saved the code snippet in step 1, select it, and click Open.
