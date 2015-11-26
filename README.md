@@ -1,2 +1,2 @@
-# fluent-migrator-vs-snippet
+# Fluent Migrator Snippet
 A Visual Studio C# snippet for Fluent Migrator
