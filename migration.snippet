@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Fluent Migration Class</Title>
+            <Shortcut>migration</Shortcut>
+            <Description>Code snippet for generating migration class</Description>
+            <Author>Taher N D <![CDATA[@taher435]]></Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>                
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal>
+                    <ID>FolderLocation</ID>
+                    <ToolTip>Where is the migration class located (full folder path).</ToolTip>
+                    <Default>MyMigrationFolder</Default>
+                </Literal>
+                <Literal>
+                    <ID>MigrationNumber</ID>
+                    <ToolTip>Migration number</ToolTip>
+                    <Default>0</Default>
+                </Literal>
+                <Literal>
+                    <ID>MigrationClassNameWithCardNumber</ID>
+                    <ToolTip>Your migration class name with card number</ToolTip>
+                    <Default>MyMigration_0000</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="csharp">
+                <![CDATA[using FluentMigrator;
+
+namespace $FolderLocation$
+{
+    [Migration($MigrationNumber$)]
+    public class $MigrationClassNameWithCardNumber$ : Migration 
+    {
+        public override void Up()
+        {        
+            //Execute.Sql("your sql statement here");
+            //Execute.Script(@"your sql script file here");   
+        }
+        public override void Down()
+        {
+            //Execute.Sql("your sql statement here");
+            //Execute.Script(@"your sql script file here");   
+        }
+    }
+}
+                 ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
